@@ -4,7 +4,7 @@ from email.MIMEMultipart import MIMEMultipart
 from email.MIMEText import MIMEText
 from email.MIMEBase import MIMEBase
 
-
+# Pretty straight forward, sending e-mail over SMTP. I have made a dummy account for this.
 fromaddr = "dummypython1@gmail.com"
 toaddr = "luisxciv@gmail.com"
 

