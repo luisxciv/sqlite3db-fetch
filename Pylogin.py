@@ -1,4 +1,15 @@
 #!/usr/bin/env python
+'''
+  ___      _           _
+ / __|_  _| |___  __ _(_)_ _
+ \__ \ || | / _ \/ _` | | ' \
+ |___/\_, |_\___/\__, |_|_||_|
+      |__/       |___/
+                                v1.2
+                                by: luisxciv
+
+'''
+
 from os import getenv
 import sqlite3
 import win32crypt

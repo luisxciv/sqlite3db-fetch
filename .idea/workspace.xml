@@ -33,11 +33,11 @@
       <file leaf-file-name="Pylogin.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Pylogin.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="31" column="22" lean-forward="false" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
+            <state relative-caret-position="136">
+              <caret line="8" column="44" lean-forward="true" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="44" />
               <folding>
-                <marker date="1492678491564" expanded="true" signature="425:453" ph="PRAGMA busy_... " />
-                <marker date="1492678491564" expanded="true" signature="544:605" ph="Select actio... logins" />
+                <marker date="1492678741600" expanded="true" signature="655:683" ph="PRAGMA busy_... " />
+                <marker date="1492678741600" expanded="true" signature="774:835" ph="Select actio... logins" />
               </folding>
             </state>
           </provider>
@@ -53,8 +53,8 @@
       <list>
         <option value="$PROJECT_DIR$/email.py" />
         <option value="$PROJECT_DIR$/Pass.py" />
-        <option value="$PROJECT_DIR$/Pylogin.py" />
         <option value="$PROJECT_DIR$/sendmail.py" />
+        <option value="$PROJECT_DIR$/Pylogin.py" />
       </list>
     </option>
   </component>
@@ -469,11 +469,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Pylogin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="31" column="22" lean-forward="false" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
+        <state relative-caret-position="136">
+          <caret line="8" column="44" lean-forward="true" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="44" />
           <folding>
-            <marker date="1492678491564" expanded="true" signature="425:453" ph="PRAGMA busy_... " />
-            <marker date="1492678491564" expanded="true" signature="544:605" ph="Select actio... logins" />
+            <marker date="1492678741600" expanded="true" signature="655:683" ph="PRAGMA busy_... " />
+            <marker date="1492678741600" expanded="true" signature="774:835" ph="Select actio... logins" />
           </folding>
         </state>
       </provider>
