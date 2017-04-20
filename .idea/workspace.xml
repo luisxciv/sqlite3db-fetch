@@ -33,11 +33,11 @@
       <file leaf-file-name="Pylogin.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Pylogin.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="44" lean-forward="true" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="44" />
+            <state relative-caret-position="68">
+              <caret line="4" column="25" lean-forward="false" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
               <folding>
-                <marker date="1492678741600" expanded="true" signature="655:683" ph="PRAGMA busy_... " />
-                <marker date="1492678741600" expanded="true" signature="774:835" ph="Select actio... logins" />
+                <marker date="1492678769956" expanded="true" signature="655:683" ph="PRAGMA busy_... " />
+                <marker date="1492678769956" expanded="true" signature="774:835" ph="Select actio... logins" />
               </folding>
             </state>
           </provider>
@@ -469,11 +469,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Pylogin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="44" lean-forward="true" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="44" />
+        <state relative-caret-position="68">
+          <caret line="4" column="25" lean-forward="false" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
           <folding>
-            <marker date="1492678741600" expanded="true" signature="655:683" ph="PRAGMA busy_... " />
-            <marker date="1492678741600" expanded="true" signature="774:835" ph="Select actio... logins" />
+            <marker date="1492678769956" expanded="true" signature="655:683" ph="PRAGMA busy_... " />
+            <marker date="1492678769956" expanded="true" signature="774:835" ph="Select actio... logins" />
           </folding>
         </state>
       </provider>
