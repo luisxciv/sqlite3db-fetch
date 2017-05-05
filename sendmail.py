@@ -12,9 +12,9 @@ msg = MIMEMultipart()
 
 msg['From'] = fromaddr
 msg['To'] = toaddr
-msg['Subject'] = "Chrome text files"
+msg['Subject'] = "Pick a subject for the email"
 
-body = "Text files from target sent successfully"
+body = "This is the body message"
 
 msg.attach(MIMEText(body, 'plain'))
 
