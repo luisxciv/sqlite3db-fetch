@@ -1,14 +1,4 @@
 #!/usr/bin/env python
-'''
-  ___      _           _
- | _ \_  _| |___  __ _(_)_ _
- |  _/ || | / _ \/ _` | | ' \
- |_|  \_, |_\___/\__, |_|_||_|
-      |__/       |___/
-                                v1.2
-                                by: luisxciv
-
-'''
 
 from os import getenv
 import sqlite3
