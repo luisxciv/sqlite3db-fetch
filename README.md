@@ -1,6 +1,6 @@
 # Pylogin
+``` DISCLAIMER: This script was made for educational purposes only.```
 
-``` DISCLAIMER: This script was made for educational purposes only. ```
 ``` Don't use this for anything illegal, don't be an a hole ```
 
 The purpose of this script is to extract confidential data from google chrome's sqlite3 db. The logins table contains the columns; origin_url, username_value and password_vale as seen visually in this image.
