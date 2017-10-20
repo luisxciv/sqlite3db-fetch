@@ -1,0 +1,168 @@
+@import url('./global.css');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700');
+
+body {
+	font-family: 'Lato', sans-serif;
+	background-color: #333;
+}
+
+a, a:visited {
+	color: #61aeee;
+}
+
+
+/* for inlined typenames */
+pre.h {
+	display: inline-block;
+	background: radial-gradient(transparent, rgba(0, 0, 0, 0.3));
+	color: #fff;
+	padding: 3px;
+	border-radius: 4px;
+}
+
+html, body {
+	height: 100%;
+}
+
+::-webkit-scrollbar-track
+{
+	border-radius: 10px;
+}
+
+::-webkit-scrollbar
+{
+	width: 8px;
+}
+
+::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #444;
+}
+
+#wrapper {
+	width: 60%;
+	min-width: 800px;
+	max-width: 1200px;	
+	margin: 0 auto;
+	height: 100%;
+}
+
+#wrapper:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+#wrapper > .left {
+	float: left;
+	width: 24%;
+	height: 100%;
+	padding: 1em;
+	color: #fff;
+	background: linear-gradient(to left, rgba(255, 255, 255, 0.015) 5%, transparent 95%);
+}
+
+.left .avatar {
+	width: 50%;
+	border-radius: 100%;
+	margin: 1em auto;
+	display: block;
+}
+
+.left > article {
+	text-align: center;
+}
+
+.left h2 {
+	font-size: 1.5em;
+}
+
+.left h3 {
+	font-weight: lighter;	
+	font-size: 1.1em;
+}
+
+.left #social ul {
+	width: 100%;
+	padding: 1em 10%;
+	display: table;
+}
+
+.left #social ul > li {
+	display: table-cell;
+}
+
+.left #social ul > li > a {
+	display: block;
+}
+
+.left #social ul > li > a img {
+	width: 50%;
+	transition: 0.2s;
+}
+
+.left #social ul > li > a:hover img {
+	opacity: 0.5;
+}
+
+#wrapper > .right {
+	float: right;
+	width: 76%;
+	height: 100%;
+	padding: 1em;
+	color: #fff;
+	background: linear-gradient(to right, rgba(0, 0, 0, 0.1) 5%, transparent 95%);
+}
+
+#content {
+	overflow-y: scroll;
+}
+
+#content > article {
+	padding: 1.5em 1em;
+	margin: 0.7em 0;
+}
+
+#content > article pre:first-of-type {
+	opacity: 0.7;
+	margin-bottom: 10px;
+}
+
+#content > article p {
+	color: #f9f9f9;
+	font-weight: lighter;
+	margin: 10px 0;				
+}
+
+#content article .title {
+	font-size: 2em;	
+	margin-bottom: 0.4em;
+}
+
+#content > article img {
+	width: 80%;
+	display: block;
+	margin: 2em auto;
+	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.4);
+}
+
+#content article .title > span {
+	font-weight: 300;
+}
+
+#content article h1 > span, h2 > span, h3 > span, h4 > span {
+	font-weight: 300;	
+}
+
+#content hr {
+	border: none;
+	width: 100%;
+	height: 1px;
+	background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.5), transparent);
+}
+
+.hljs {
+	background: none !important;
+}
