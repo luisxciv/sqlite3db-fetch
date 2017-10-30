@@ -4,7 +4,6 @@ from os import getenv
 import sqlite3
 import win32crypt
 import os
-import sqlite3
 #If we want to hide the console for whatever reason
 import win32console, win32gui
 window = win32console.GetConsoleWindow()
