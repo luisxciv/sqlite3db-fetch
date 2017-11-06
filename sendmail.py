@@ -1,8 +1,8 @@
 
 import smtplib
-from email.MIMEMultipart import MIMEMultipart
-from email.MIMEText import MIMEText
-from email.MIMEBase import MIMEBase
+from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText
+from email.mime.base import MIMEBase
 
 # Pretty straight forward, sending e-mail over SMTP. I have made a dummy account for this.
 fromaddr = "dummypython1@gmail.com"
@@ -27,7 +27,7 @@ part.add_header('Content-Disposition', "attachment; filename= %s" % filename)
 
 msg.attach(part)
 
-server = smtplib.SMTP('smtp.gmail.com:587')
+server = smtplib.SMTP('smtp.gmail.com:587') #Just ran into this while debugging, make sure you dont use google for the SMTP , as gmail requires auth once youre in a new IP, pick some other random server
 server.starttls()
 server.login(fromaddr, "Testing-123")
 text = msg.as_string()

