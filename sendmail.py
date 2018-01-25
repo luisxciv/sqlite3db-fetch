@@ -5,8 +5,8 @@ from email.mime.text import MIMEText
 from email.mime.base import MIMEBase
 
 # Pretty straight forward, sending e-mail over SMTP. I have made a dummy account for this.
-fromaddr = "dummypython1@gmail.com"
-toaddr = "luisxciv@gmail.com"
+fromaddr = "from@mail.com"
+toaddr = "your@mail.com"
 
 msg = MIMEMultipart()
 
@@ -29,7 +29,7 @@ msg.attach(part)
 
 server = smtplib.SMTP('smtp.gmail.com:587') #Just ran into this while debugging, make sure you dont use google for the SMTP , as gmail requires auth once youre in a new IP, pick some other random server
 server.starttls()
-server.login(fromaddr, "Testing-123")
+server.login(fromaddr, "passwords")
 text = msg.as_string()
 server.sendmail(fromaddr, toaddr, text)
 server.quit()
